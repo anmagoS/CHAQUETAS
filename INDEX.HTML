@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  
+  <!-- Meta esenciales primero -->
+  <title>Anmago Store - Ropa, Hogar, Belleza y más | Tienda Online Colombia</title>
+  <meta name="description" content="Encuentra ropa, relojería, hogar, belleza y más en Anmago Store. Los mejores precios, calidad garantizada y envíos a toda Colombia.">
+  <meta name="keywords" content="ropa online Colombia, camisetas selección Colombia, moda colombiana, comprar ropa por internet, envíos gratis Colombia">
+  <meta name="author" content="ANMAGO STORE">
+  <meta name="robots" content="index, follow">
+  <meta name="google-site-verification" content="ea0VJL7XRbgbPwBex-V1Z2JeuebSdELH2lSUw2BkAxw" />
+  
+  <!-- Open Graph / Facebook / WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://anmagos.github.io/anmago.store/">
+  <meta property="og:title" content="Anmago Store - Ropa, Hogar, Belleza y más">
+  <meta property="og:description" content="Encuentra ropa, relojería, hogar, belleza y más. Los mejores precios y calidad garantizada.">
+  <meta property="og:image" content="https://ik.imagekit.io/mbsk9dati/logo.jpg?tr=w-1200,h-630">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Anmago Store - Ropa, Hogar, Belleza y más">
+  <meta name="twitter:description" content="Tienda online con los mejores precios y calidad garantizada. Envíos a toda Colombia.">
+  <meta name="twitter:image" content="https://ik.imagekit.io/mbsk9dati/logo.jpg?tr=w-1200,h-630">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://anmagos.github.io/anmago.store/">
+  
+  <!-- ⚡ OPTIMIZACIONES CRÍTICAS PARA LCP -->
+  <link rel="icon" href="tina-192.png" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="tina-192.png">
+  
+  <!-- 1. Precarga del LOGO (elemento LCP más probable) -->
+  <link rel="preload" href="https://ik.imagekit.io/mbsk9dati/logo.jpg?tr=w-96,h-96,f-auto" as="image" fetchpriority="high">
+  
+  <!-- 2. Conexiones tempranas para CDNs críticas -->
+  <link rel="preconnect" href="https://ik.imagekit.io" crossorigin>
+  <link rel="dns-prefetch" href="https://ik.imagekit.io">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+  
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2484059835372099');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=2484059835372099&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PD2Y81DPRG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PD2Y81DPRG', { send_page_view: true });
+  </script>
+  
+  <!-- CSS CRÍTICO INLINE MEJORADO -->
+  <style>
+    /* ========== VARIABLES MEJORADAS ========== */
+    :root {
+      --primary: #1B4557;
+      --primary-dark: #12303d;
+      --primary-light: #2a6a8f;
+      --accent: #C9A96E;
+      --success: #198754;
+      --warning: #ffc107;
+      --danger: #dc3545;
+      --text-dark: #2C3E50;
+      --text-muted: #7F8C8D;
+      --bg-light: #f8fafc;
+      --border-light: #e9ecef;
+      --shadow-sm: 0 2px 8px rgba(0,0,0,0.04);
+      --shadow-md: 0 4px 16px rgba(0,0,0,0.08);
+      --shadow-lg: 0 8px 28px rgba(0,0,0,0.12);
+      --shadow-hover: 0 12px 32px rgba(0,0,0,0.15);
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .header-sticky {
+      background: linear-gradient(135deg, var(--primary), var(--primary-light));
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1030;
+      height: 70px;
+      box-shadow: var(--shadow-md);
+      transition: var(--transition);
+    }
+    
+    body { 
+      padding-top: 70px; 
+      background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+      margin: 0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      color: var(--text-dark);
+      min-height: 100vh;
+    }
+    
+    /* Skeleton Loader Mejorado */
+    .skeleton {
+      background: linear-gradient(90deg, #e9ecef 25%, #dee2e6 50%, #e9ecef 75%);
+      background-size: 200% 100%;
+      border-radius: 16px;
+      animation: shimmer 1.5s infinite;
+    }
+    
+    @keyframes shimmer {
+      0% { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+    
+    /* Botón volver al inicio mejorado */
+    .btn-volver-inicio {
+      position: fixed;
+      top: 80px;
+      left: 10px;
+      z-index: 1000;
+      width: 40px;
+      height: 40px;
+      background: white;
+      border: 1px solid var(--border-light);
+      border-radius: 50%;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: var(--primary);
+      transition: var(--transition);
+      display: none;
+    }
+    
+    .btn-volver-inicio:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+      color: var(--primary-light);
+    }
+    
+    /* Buscador Mejorado */
+    .sugerencias-container {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: white;
+      border: 1px solid var(--border-light);
+      border-radius: 16px;
+      box-shadow: var(--shadow-lg);
+      max-height: 400px;
+      overflow-y: auto;
+      z-index: 9999;
+      margin-top: 8px;
+      display: none;
+    }
+    
+    .sugerencias-container.mostrar { display: block; }
+    
+    .sugerencia-item {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding: 14px;
+      border-bottom: 1px solid var(--border-light);
+      transition: var(--transition);
+      cursor: pointer;
+    }
+    
+    .sugerencia-item:hover {
+      background: var(--bg-light);
+      transform: translateX(4px);
+    }
+    
+    .sugerencia-item img {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+      border-radius: 10px;
+      background: var(--bg-light);
+      padding: 4px;
+      border: 1px solid var(--border-light);
+    }
+    
+    .sugerencia-info { flex: 1; }
+    .sugerencia-nombre { font-weight: 600; font-size: 0.95rem; color: var(--text-dark); margin-bottom: 4px; }
+    .sugerencia-categoria { font-size: 0.75rem; color: var(--text-muted); }
+    .sugerencia-precio { font-size: 0.9rem; font-weight: 700; color: var(--primary); }
+    .sugerencia-precio::before { content: '$'; font-size: 0.8em; margin-right: 2px; }
+    .sugerencia-vacia { padding: 20px; text-align: center; color: var(--text-muted); }
+    
+    /* Intro animada */
+    #intro {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      background: linear-gradient(135deg, #1b4557 0%, #2a6b8a 40%, #ffffff 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      animation: curtainUp 2.4s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+      overflow: hidden;
+      pointer-events: none;
+    }
+    
+    @keyframes curtainUp {
+      0% { transform: translateY(0); opacity: 1; }
+      70% { opacity: 0.95; }
+      100% { transform: translateY(-100%); opacity: 0; display: none; }
+    }
+    @keyframes logoReveal { 0% { transform: scale(0.8) rotate(-5deg); opacity: 0; } 100% { transform: scale(1) rotate(0); opacity: 1; } }
+    @keyframes progressFill { 0% { width: 0%; } 80% { width: 90%; } 100% { width: 100%; } }
+    @keyframes textFade { 0% { opacity: 0; transform: translateY(10px); } 100% { opacity: 1; transform: translateY(0); } }
+    .dots::after { content: '...'; animation: dotsPulse 1.5s infinite; }
+    @keyframes dotsPulse { 0%,20%{opacity:0.2;}50%{opacity:1;}100%{opacity:0.2;} }
+    
+    /* Banner Promocional Mejorado */
+    .banner-promocional {
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      color: white;
+      font-weight: 500;
+      font-size: 0.85rem;
+      text-align: center;
+      padding: 10px 0;
+    }
+    
+    /* Botón Instalar App Mejorado */
+    .instalar-container {
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      z-index: 1001;
+    }
+    .btn-instalar-app {
+      background: linear-gradient(135deg, var(--primary), var(--primary-light));
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 40px;
+      font-weight: 600;
+      box-shadow: var(--shadow-md);
+      transition: var(--transition);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+    }
+    .btn-instalar-app:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+   /* CATEGORÍAS RÁPIDAS - VERSIÓN COMPACTA */
+.categoria-rapida-card {
+  background: white;
+  border-radius: 30px;
+  padding: 0.4rem 1rem;
+  text-align: center;
+  transition: var(--transition);
+  cursor: pointer;
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+  flex-shrink: 0;
+  min-width: 70px;
+  white-space: nowrap;
+}
+
+.categoria-rapida-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary-light);
+  background: linear-gradient(135deg, white, var(--bg-light));
+}
+
+.categoria-rapida-card i {
+  font-size: 0.9rem;
+  color: var(--primary);
+  margin-right: 0.4rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.categoria-rapida-card span {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.categoria-rapida-card:hover i,
+.categoria-rapida-card:hover span {
+  color: var(--primary-light);
+}
+    
+    /* PRODUCTOS DESTACADOS MEJORADOS */
+    .productos-destacados { margin-bottom: 3rem; }
+    .card-producto-destacado {
+      background: white;
+      border-radius: 24px;
+      overflow: hidden;
+      transition: var(--transition);
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border-light);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .card-producto-destacado:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-hover);
+    }
+    .card-img-container {
+      height: 200px;
+      background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+    .card-img-container img {
+      max-height: 100%;
+      width: auto;
+      object-fit: contain;
+      transition: var(--transition);
+    }
+    .card-producto-destacado:hover img { transform: scale(1.05); }
+    .card-info { padding: 1rem; text-align: center; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; }
+    .btn-ver-producto {
+      background: linear-gradient(135deg, var(--primary), var(--primary-light));
+      border: none;
+      border-radius: 40px;
+      padding: 10px 20px;
+      font-weight: 600;
+      font-size: 0.85rem;
+      transition: var(--transition);
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+      color: white;
+      width: 100%;
+    }
+    .btn-ver-producto:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(27,69,87,0.3);
+      color: white;
+    }
+    
+    /* Botón carrito flotante mejorado */
+    .btn-carrito-flotante {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: linear-gradient(135deg, var(--primary), var(--primary-light));
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      box-shadow: var(--shadow-md);
+      transition: var(--transition);
+      z-index: 1000;
+      color: white;
+    }
+    .btn-carrito-flotante:hover {
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: var(--shadow-hover);
+      color: white;
+    }
+    .contador-carrito {
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      background: var(--danger);
+      color: white;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+      font-weight: bold;
+    }
+    #contador-carrito-mobile {
+      font-size: 0.6rem;
+      min-width: 18px;
+      height: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 4px;
+    }
+    
+    /* Sistema de vistas */
+    .vista { display: none; }
+    .vista-activa { display: block; }
+    
+    /* GRID DE PRODUCTOS MEJORADO */
+    .grid-productos-ml {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      padding: 1rem 0;
+    }
+    @media (min-width: 576px) { .grid-productos-ml { grid-template-columns: repeat(3, 1fr); gap: 1.2rem; } }
+    @media (min-width: 768px) { .grid-productos-ml { grid-template-columns: repeat(4, 1fr); gap: 1.5rem; } }
+    @media (min-width: 1024px) { .grid-productos-ml { grid-template-columns: repeat(5, 1fr); gap: 1.5rem; } }
+    @media (min-width: 1200px) { .grid-productos-ml { grid-template-columns: repeat(5, 1fr); gap: 1.8rem; } }
+    @media (min-width: 1400px) { .grid-productos-ml { grid-template-columns: repeat(6, 1fr); gap: 2rem; } }
+    
+    /* Card producto mejorada */
+    .card-producto-ml {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      transition: var(--transition);
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border-light);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .card-producto-ml:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--primary-light);
+    }
+    .card-producto-ml .img-container {
+      aspect-ratio: 1 / 1;
+      background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+    .card-producto-ml img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      transition: var(--transition);
+    }
+    .card-producto-ml:hover img { transform: scale(1.05); }
+    .card-producto-ml .info {
+      padding: 1rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .card-producto-ml .producto-nombre {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;  /* Propiedad estándar para futura compatibilidad */
+  -webkit-box-orient: vertical;
+  box-orient: vertical;  /* Propiedad estándar */
+  overflow: hidden;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  line-height: 1.3;
+}
+    .card-producto-ml .precio-actual {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .card-producto-ml .precio-actual::before { content: '$'; font-size: 0.85rem; margin-right: 2px; }
+    .card-producto-ml .precio-anterior { font-size: 0.75rem; color: var(--text-muted); text-decoration: line-through; }
+    .card-producto-ml .envio-gratis { font-size: 0.7rem; color: var(--success); font-weight: 500; }
+    
+    /* Footer Mejorado */
+    .footer {
+      background: linear-gradient(135deg, #1a2a36, var(--primary-dark));
+      color: white;
+      margin-top: 3rem;
+      padding: 2rem 0 1rem;
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+      .header-sticky { height: 60px; }
+      body { padding-top: 60px; }
+      .btn-volver-inicio { top: 70px; left: 8px; width: 36px; height: 36px; }
+      .card-img-container { height: 160px; padding: 10px; }
+      .instalar-container { bottom: 70px; right: 15px; }
+      .btn-carrito-flotante { bottom: 70px; right: 15px; width: 50px; height: 50px; }
+      .sugerencia-item { padding: 12px; gap: 12px; }
+      .sugerencia-item img { width: 42px; height: 42px; }
+      #intro .logo-container { width: 140px; height: 140px; }
+      #intro .loading-text { font-size: 16px; }
+    }
+    
+    @media (min-width: 768px) { .btn-volver-inicio { display: flex; } }
+    
+    /* Accesibilidad */
+    :focus-visible { outline: 3px solid var(--primary); outline-offset: 2px; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+/* Carrusel general más compacto */
+.categorias-carrusel {
+  position: relative;
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.categorias-carrusel-container {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  flex: 1;
+  padding: 4px 0;
+}
+
+.categorias-carrusel-container::-webkit-scrollbar {
+  height: 4px;
+}
+
+.categorias-carrusel-container::-webkit-scrollbar-track {
+  background: var(--border-light);
+  border-radius: 10px;
+}
+
+.categorias-carrusel-container::-webkit-scrollbar-thumb {
+  background: var(--primary-light);
+  border-radius: 10px;
+}
+
+.categorias-carrusel-container::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+.categorias-scroll-wrapper {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0;
+  min-width: min-content;
+}
+
+.categoria-rapida-card {
+  background: white;
+  border-radius: 40px;
+  padding: 0.6rem 1.2rem;
+  text-align: center;
+  transition: var(--transition);
+  cursor: pointer;
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+  flex-shrink: 0;
+  min-width: 85px;
+}
+
+.categoria-rapida-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary-light);
+  background: linear-gradient(135deg, white, var(--bg-light));
+}
+
+.categoria-rapida-card i {
+  font-size: 1.2rem;
+  color: var(--primary);
+  margin-right: 0.5rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.categoria-rapida-card span {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.categoria-rapida-card:hover i,
+.categoria-rapida-card:hover span {
+  color: var(--primary-light);
+}
+
+/* Flechas de navegación más pequeñas */
+.btn-carrusel-categoria {
+  background: white;
+  border: 1px solid var(--border-light);
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+  flex-shrink: 0;
+  z-index: 10;
+}
+
+.btn-carrusel-categoria:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: white;
+  transform: scale(1.05);
+}
+
+.btn-carrusel-categoria i {
+  font-size: 0.8rem;
+}
+
+/* Indicador visual de que hay más contenido */
+.categorias-carrusel-container::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  pointer-events: none;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.9));
+  display: none;
+}
+
+.categorias-carrusel-container.has-overflow::after {
+  display: block;
+}
+
+/* Texto indicador para móvil */
+.categorias-indicador {
+  text-align: center;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .categorias-indicador {
+    display: block;
+  }
+  .categoria-rapida-card {
+    padding: 0.5rem 1rem;
+    min-width: 75px;
+  }
+  .categoria-rapida-card i {
+    font-size: 1rem;
+  }
+  .categoria-rapida-card span {
+    font-size: 0.75rem;
+  }
+}
+ </style>
+  
+  <!-- CSS EXTERNO CARGADO ASÍNCRONAMENTE -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="ESTILO.CSS?v=20251116" media="print" onload="this.media='all'">
+  
+  <noscript>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="ESTILO.CSS?v=20251116">
+    <div class="alert alert-warning text-center mt-3">JavaScript está desactivado. Algunas funciones pueden no estar disponibles.</div>
+  </noscript>
+</head>
+
+<body class="bg-light">
+  <!-- Intro animada -->
+  <div id="intro" aria-hidden="true">
+    <div class="logo-container" style="position: relative; width: 180px; height: 180px; margin-bottom: 30px; animation: logoReveal 1.2s ease-out 0.3s both;">
+      <img src="tina-512.png" alt="ANMAGO Store" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 10px 20px rgba(0,0,0,0.2));">
+      <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at center, rgba(255,255,255,0.2) 0%, transparent 70%); z-index: 1;"></div>
+    </div>
+    <div class="loading-text" style="color: white; font-size: 18px; font-weight: 300; letter-spacing: 1px; text-shadow: 0 2px 4px rgba(0,0,0,0.3); animation: textFade 2s ease-in-out;">CARGANDO<span class="dots">...</span></div>
+    <div class="progress-bar" style="width: 200px; height: 2px; background: rgba(255,255,255,0.2); margin-top: 20px; border-radius: 10px; overflow: hidden;">
+      <div style="width: 0%; height: 100%; background: linear-gradient(90deg, #ffffff, #a8e6ff); animation: progressFill 1.5s ease-in-out forwards;"></div>
+    </div>
+    <div style="position: absolute; bottom: 40px; color: rgba(255,255,255,0.7); font-size: 14px; animation: fadeIn 1s ease 1s both;">ANMAGO Store</div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header-sticky d-flex justify-content-between align-items-center px-3 py-2">
+    <div class="logo">
+      <a href="#" onclick="mostrarTodosLosProductosCompleto(); return false;" aria-label="Ir al inicio">
+        <img src="https://ik.imagekit.io/mbsk9dati/logo.jpg?tr=w-96,h-96,f-auto" alt="Logo ANMAGO" width="96" height="96" fetchpriority="high" decoding="async" style="border-radius: 12px;">
+      </a>
+    </div>
+    <div class="flex-grow-1 mx-3 position-relative" style="max-width: 500px;">
+      <label for="buscador" class="sr-only">Buscar productos</label>
+      <input id="buscador" class="form-control buscador-header" placeholder="🔍 Buscar productos..." autocomplete="off" aria-label="Buscar productos" aria-describedby="sugerencias" style="border-radius: 40px; border: none; padding: 10px 20px; background: rgba(255,255,255,0.95); box-shadow: var(--shadow-sm); transition: var(--transition);">
+      <div id="sugerencias" class="sugerencias-container" role="listbox" aria-label="Resultados de búsqueda"></div>
+    </div>
+    <button class="navbar-toggler border-0 bg-transparent" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral" aria-label="Abrir menú">
+      <i class="bi bi-list fs-1 text-white"></i>
+    </button>
+  </header>
+
+  <!-- MENÚ LATERAL -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="menuLateral" aria-labelledby="menuLateralLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="menuLateralLabel">
+        <img src="https://ik.imagekit.io/mbsk9dati/logo.jpg?tr=w-48,h-48" alt="" width="48" height="48" aria-hidden="true" style="border-radius: 10px;"> Anmago Store
+      </h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar menú"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column gap-3">
+      <a href="#" class="nav-link d-flex align-items-center" onclick="mostrarTodosLosProductosCompleto(); cerrarMenu(); return false;"><i class="bi bi-house me-2"></i> Inicio</a>
+      <div id="menu-categorias-dinamico" class="mt-2">
+        <p class="small text-muted mb-2"><i class="bi bi-list-ul me-1"></i> Categorías principales</p>
+        <div class="text-center py-3"><div class="spinner-border spinner-border-sm text-primary" role="status"><span class="visually-hidden">Cargando...</span></div><p class="mt-2 small text-muted">Cargando categorías...</p></div>
+      </div>
+      <a href="modalformulario.html" class="nav-link d-flex align-items-center" onclick="cerrarMenu();"><i class="bi bi-person me-2"></i> Mi cuenta</a>
+      <a href="https://wa.me/573006498710?text=¡Hola!%20Me%20interesan%20sus%20productos%20de%20Anmago%20Store" target="_blank" class="nav-link d-flex align-items-center text-success" onclick="cerrarMenu();"><i class="bi bi-whatsapp me-2"></i> WhatsApp</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSevvlCBgz7L6l2-DecKQLazoswqzf7DRYWOaCq4FtMGOR6D2Q/viewform?usp=header" target="_blank" class="nav-link d-flex align-items-center" onclick="cerrarMenu();"><i class="bi bi-envelope me-2"></i> Contacto</a>
+    </div>
+    <div class="offcanvas-footer border-top p-3">
+      <div class="text-center small text-muted"><p class="mb-1">anmagostore@gmail.com</p><p class="mb-0">3006498710 - 3115046741</p></div>
+    </div>
+  </div>
+
+  <!-- BOTÓN VOLVER AL INICIO -->
+  <a href="https://anmagos.github.io/anmago.store/" class="btn-volver-inicio" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Volver al inicio" aria-label="Volver al inicio"><i class="bi bi-house-door-fill" style="font-size: 1.3rem;"></i></a>
+
+<!-- CATEGORÍAS RÁPIDAS - CARRUSEL HORIZONTAL -->
+<div class="container-fluid mt-3 px-2">
+  <div class="categorias-carrusel" id="categorias-carrusel-wrapper">
+    <button class="btn-carrusel-categoria" id="btn-carrusel-prev" aria-label="Categorías anteriores" style="display: none;">
+      <i class="bi bi-chevron-left"></i>
+    </button>
+    
+    <div class="categorias-carrusel-container" id="categorias-carrusel-container">
+      <div class="categorias-scroll-wrapper" id="categorias-rapidas">
+        <div class="text-center py-2 w-100">
+          <div class="spinner-border spinner-border-sm text-primary" role="status">
+            <span class="visually-hidden">Cargando...</span>
+          </div>
+          <small class="text-muted ms-2">Cargando categorías...</small>
+        </div>
+      </div>
+    </div>
+    
+    <button class="btn-carrusel-categoria" id="btn-carrusel-next" aria-label="Más categorías" style="display: none;">
+      <i class="bi bi-chevron-right"></i>
+    </button>
+  </div>
+  <div class="categorias-indicador">
+    <i class="bi bi-arrow-left-right"></i> Desliza para ver más categorías
+  </div>
+</div>
+
+  <!-- BANNER INSTITUCIONAL MEJORADO -->
+  <div class="container-fluid banner-promocional py-2">
+    <div class="container text-center">
+      <span style="color:#fce07b;">✨ Nuestros precios incluyen envío a la mayoría de ciudades ✨</span><br>
+      <span style="color:#fce07b;">Mejores precios · Calidad garantizada · Envíos Nacionales y Contraentrega</span>
+    </div>
+  </div>
+
+  <!-- BOTÓN INSTALAR APP -->
+  <div id="instalar-container" class="instalar-container d-none" aria-live="polite">
+    <button id="boton-instalar" class="btn-instalar-app"><i class="bi bi-download"></i> Instalar App</button>
+  </div>
+</body>
+</html>
